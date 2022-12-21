@@ -51,16 +51,16 @@ const tokoEsKrim = () => {
       await waktu(2000);
       console.log(`${stok.buah[0]} telah dipilih`);
 
-      await waktu(0000);
+      await waktu(1000);
       console.log("produksi dimulai");
 
       await waktu(2000);
       console.log(`${stok.buah[0]} dipotong-potong`);
 
-      await waktu(1000);
+      await waktu(2000);
       console.log(`${stok.liquid[0]} and ${stok.liquid[1]} ditambahkan`);
 
-      await waktu(1000);
+      await waktu(2000);
       console.log("nyalakan mesin");
 
       await waktu(2000);
