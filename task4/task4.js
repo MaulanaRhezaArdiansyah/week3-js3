@@ -24,61 +24,61 @@
 // 2. PROGRAM SIMULASI TOKO ES KRIM
 // USE CONSOLE LOG
 
-// function tokoEsKrim() {
-//   let stok = {
-//     buah: ["strawberry", "anggur", "pisang", "apel"],
-//     liquid: ["air", "es batu"],
-//     wadah: ["cone", "cup", "stick"],
-//     topping: ["coklat", "kacang"],
-//   };
+const tokoEsKrim = () => {
+  let stok = {
+    buah: ["strawberry", "anggur", "pisang", "apel"],
+    liquid: ["air", "es batu"],
+    wadah: ["cone", "cup", "stick"],
+    topping: ["coklat", "kacang"],
+  };
 
-//   let tokoBuka = true;
+  let tokoBuka = true;
 
-//   function waktu(ms) {
-//     return new Promise((resolve, reject) => {
-//       if (tokoBuka) {
-//         setTimeout(() => {
-//           resolve();
-//         }, ms);
-//       } else {
-//         reject(error);
-//       }
-//     });
-//   }
+  const waktu = (ms) => {
+    return new Promise((resolve, reject) => {
+      if (tokoBuka) {
+        setTimeout(() => {
+          resolve();
+        }, ms);
+      } else {
+        reject(error);
+      }
+    });
+  };
 
-//   async function dapur() {
-//     try {
-//       await waktu(2000);
-//       console.log(`${stok.buah[0]} telah dipilih`);
+  const dapur = async () => {
+    try {
+      await waktu(2000);
+      console.log(`${stok.buah[0]} telah dipilih`);
 
-//       await waktu(0000);
-//       console.log("produksi dimulai");
+      await waktu(0000);
+      console.log("produksi dimulai");
 
-//       await waktu(2000);
-//       console.log(`${stok.buah[0]} dipotong-potong`);
+      await waktu(2000);
+      console.log(`${stok.buah[0]} dipotong-potong`);
 
-//       await waktu(1000);
-//       console.log(`${stok.liquid[0]} and ${stok.liquid[1]} ditambahkan`);
+      await waktu(1000);
+      console.log(`${stok.liquid[0]} and ${stok.liquid[1]} ditambahkan`);
 
-//       await waktu(1000);
-//       console.log("nyalakan mesin");
+      await waktu(1000);
+      console.log("nyalakan mesin");
 
-//       await waktu(2000);
-//       console.log(`es krim diletakkan di atas ${stok.wadah[0]}`);
+      await waktu(2000);
+      console.log(`es krim diletakkan di atas ${stok.wadah[0]}`);
 
-//       await waktu(3000);
-//       console.log(`${stok.topping[0]} ditambahkan`);
+      await waktu(3000);
+      console.log(`${stok.topping[0]} ditambahkan`);
 
-//       await waktu(2000);
-//       console.log("es krim siap dihidangkan");
-//     } catch (error) {
-//       console.log("customer pergi");
-//     } finally {
-//       console.log("waktunya tutup toko");
-//     }
-//   }
+      await waktu(2000);
+      console.log("es krim siap dihidangkan");
+    } catch (error) {
+      console.log("customer pergi");
+    } finally {
+      console.log("waktunya tutup toko");
+    }
+  };
 
-//   dapur();
-// }
+  dapur();
+};
 
-// tokoEsKrim();
+tokoEsKrim();

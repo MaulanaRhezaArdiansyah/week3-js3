@@ -20,8 +20,8 @@ const cekHariKerja = (day) => {
 };
 
 // USE BROWSER
-// USE THIS BROO!!
 // THEN CATCH
+// then akan mengkonsumsi code promise
 // cekHariKerja("sabtu")
 //   .then((day) => {
 //     const message = document.getElementById("message");
