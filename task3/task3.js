@@ -5,7 +5,8 @@
 // MENGGUNAKAN CONSOLE LOG
 const getMonth = (callback) => {
   setTimeout(() => {
-    let error = false;
+    // let error = false;
+    let error = true;
     let month = [
       "Januari",
       "Februari",
@@ -23,7 +24,7 @@ const getMonth = (callback) => {
     if (!error) {
       callback(null, month);
     } else {
-      callback(new Error("Sorry, Data Not Found"), []);
+      callback(new Error("Sorry, Data Month is Not Found"), []);
     }
   }, 2000);
 };

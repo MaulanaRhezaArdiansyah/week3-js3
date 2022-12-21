@@ -22,7 +22,7 @@ const cekHariKerja = (day) => {
 // USE BROWSER
 // THEN CATCH
 // then akan mengkonsumsi code promise
-// cekHariKerja("sabtu")
+// cekHariKerja("senin")
 //   .then((day) => {
 //     const message = document.getElementById("message");
 //     message.textContent = `Hari ini hari ${day}! Waktunya hari kerja!`;
@@ -34,14 +34,14 @@ const cekHariKerja = (day) => {
 
 // TRY CATCH
 // try catch digunakan untuk error handling pada async await
-// async function cekHari(day) {
-//   try {
-//     const message = document.getElementById("message");
-//     await cekHariKerja(day);
-//     message.innerText = `Hari ini hari ${day} dan ini hari kerja! Kerja lembur bagai quda!`;
-//   } catch (error) {
-//     console.log(err);
-//     message.innerText = error;
-//   }
-// }
-// cekHari("rabu");
+async function cekHari(day) {
+  try {
+    const message = document.getElementById("message");
+    await cekHariKerja(day);
+    message.innerText = `Hari ini hari ${day} dan ini hari kerja! Kerja lembur bagai quda!`;
+  } catch (error) {
+    console.log(error);
+    message.innerText = error;
+  }
+}
+cekHari("minggu");

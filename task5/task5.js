@@ -11,7 +11,7 @@
 //     .catch(() => console.log("Sorry! Data Not Found"));
 // };
 
-// getData("https://jsonplaceholder.typicode.com/users");
+// getData("https://jsonplaceholder.typicode.com/user");
 
 // USE BROWSER
 // ASYNC AWAIT TRY CATCH

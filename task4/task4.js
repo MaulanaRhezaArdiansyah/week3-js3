@@ -19,7 +19,7 @@
 //     console.log(error);
 //   }
 // }
-// cekNilaiSiswa(80);
+// cekNilaiSiswa(90);
 
 // 2. PROGRAM SIMULASI TOKO ES KRIM
 // USE CONSOLE LOG
