@@ -14,9 +14,10 @@ async function getData(id) {
         });
         usersName.innerHTML = dataName.join(", ");
       } catch (error) {
-        console.log(error + `Sorry data not found`);
+        console.log(`${error} Sorry data not found`);
       }
     }, 1000);
   });
 }
 getData("https://jsonplaceholder.typicode.com/users");
+// getData("https://jsonplaceholder.typicode.com/sers");

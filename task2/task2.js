@@ -28,6 +28,7 @@ const cekHariKerja = (day) => {
 //     message.textContent = `Hari ini hari ${day}! Waktunya hari kerja!`;
 //   })
 //   .catch((err) => {
+//     console.log(err);
 //     message.textContent = err;
 //   });
 
@@ -39,6 +40,7 @@ const cekHariKerja = (day) => {
 //     await cekHariKerja(day);
 //     message.innerText = `Hari ini hari ${day} dan ini hari kerja! Kerja lembur bagai quda!`;
 //   } catch (error) {
+//     console.log(err);
 //     message.innerText = error;
 //   }
 // }
