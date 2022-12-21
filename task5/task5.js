@@ -1,5 +1,20 @@
 // USE BROWSER
 
+// THEN CATCH
+// const getData = (id) => {
+//   fetch(id)
+//     .then((data) => data.json())
+//     .then((result) =>
+//       result.map((i) => {
+//         console.log(i.name);
+//       })
+//     )
+//     .catch(() => console.log("Sorry! Data Not Found"));
+// };
+
+// getData("https://jsonplaceholder.typicode.com/users");
+
+// ASYNC AWAIT TRY CATCH
 async function getData(id) {
   const usersName = document.getElementById("users-name");
   const getNameButton = document.getElementById("get-name-users");
@@ -14,7 +29,7 @@ async function getData(id) {
         });
         usersName.innerHTML = dataName.join(", ");
       } catch (error) {
-        console.log(`${error} Sorry data not found`);
+        console.log(`Error : Sorry! Data Not Found`);
       }
     }, 1000);
   });

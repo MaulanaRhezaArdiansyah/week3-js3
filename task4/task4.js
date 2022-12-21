@@ -1,82 +1,84 @@
 // Buatlah 2 program bebas dengan menggunakan promise seperti soal nomor 1
 
-// 1.
+// 1. PROGRAM CEK NILAI
 // USE CONSOLE LOG
-function cekNilai(nilai) {
-  return new Promise((resolve, reject) => {
-    if (nilai >= 90) {
-      resolve("Selamat! Kamu lulus!");
-    } else {
-      reject("Mohon maaf, kamu belum lulus!");
-    }
-  });
-}
-async function cekNilaiSiswa(nilai) {
-  try {
-    const cek = await cekNilai(nilai);
-    console.log(cek);
-  } catch (error) {
-    console.log(error);
-  }
-}
-cekNilaiSiswa(80);
+// function cekNilai(nilai) {
+//   return new Promise((resolve, reject) => {
+//     if (nilai >= 90) {
+//       resolve("Selamat! Kamu lulus!");
+//     } else {
+//       reject("Mohon maaf, kamu belum lulus!");
+//     }
+//   });
+// }
+// async function cekNilaiSiswa(nilai) {
+//   try {
+//     const cek = await cekNilai(nilai);
+//     console.log(cek);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// cekNilaiSiswa(80);
 
-// 2.
+// 2. PROGRAM SIMULASI TOKO ES KRIM
 // USE CONSOLE LOG
 
-// function iceCreamShop() {
-//   let stocks = {
-//     fruits: ["strawberry", "grapes", "banana", "apple"],
-//     liquid: ["water", "ice"],
-//     holder: ["cone", "cup", "stick"],
-//     toppings: ["chocolate", "peanuts"],
+// function tokoEsKrim() {
+//   let stok = {
+//     buah: ["strawberry", "anggur", "pisang", "apel"],
+//     liquid: ["air", "es batu"],
+//     wadah: ["cone", "cup", "stick"],
+//     topping: ["coklat", "kacang"],
 //   };
 
-//   let isShopOpen = false;
+//   let tokoBuka = true;
 
-//   function time(ms) {
+//   function waktu(ms) {
 //     return new Promise((resolve, reject) => {
-//       if (isShopOpen) {
-//         setTimeout(resolve, ms);
+//       if (tokoBuka) {
+//         setTimeout(() => {
+//           resolve();
+//         }, ms);
 //       } else {
-//         reject(console.log("shop is closed"));
+//         reject(error);
 //       }
 //     });
 //   }
 
-//   async function kitchen() {
+//   async function dapur() {
 //     try {
-//       await time(2000);
-//       console.log(`${stocks.fruits[0]} was selected`);
+//       await waktu(2000);
+//       console.log(`${stok.buah[0]} telah dipilih`);
 
-//       await time(0000);
-//       console.log("production has been started");
+//       await waktu(0000);
+//       console.log("produksi dimulai");
 
-//       await time(2000);
-//       console.log(`${stocks.fruits[0]} was chopped`);
+//       await waktu(2000);
+//       console.log(`${stok.buah[0]} dipotong-potong`);
 
-//       await time(1000);
-//       console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+//       await waktu(1000);
+//       console.log(`${stok.liquid[0]} and ${stok.liquid[1]} ditambahkan`);
 
-//       await time(1000);
-//       console.log("start the machine");
+//       await waktu(1000);
+//       console.log("nyalakan mesin");
 
-//       await time(2000);
-//       console.log(`ice cream placed on ${stocks.holder[0]}`);
+//       await waktu(2000);
+//       console.log(`es krim diletakkan di atas ${stok.wadah[0]}`);
 
-//       await time(3000);
-//       console.log(`${stocks.toppings[0]} was added`);
+//       await waktu(3000);
+//       console.log(`${stok.topping[0]} ditambahkan`);
 
-//       await time(2000);
-//       console.log("ice cream ready to serve");
+//       await waktu(2000);
+//       console.log("es krim siap dihidangkan");
 //     } catch (error) {
-//       console.log("customer left");
+//       console.log("customer pergi");
 //     } finally {
-//       console.log("day ended, shop is closed");
+//       console.log("waktunya tutup toko");
 //     }
 //   }
 
-//   kitchen();
+//   dapur();
 // }
 
-// iceCreamShop();
+// tokoEsKrim();
