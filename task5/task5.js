@@ -1,5 +1,4 @@
 // USE BROWSER
-
 // THEN CATCH
 // const getData = (id) => {
 //   fetch(id)
@@ -14,6 +13,7 @@
 
 // getData("https://jsonplaceholder.typicode.com/users");
 
+// USE BROWSER
 // ASYNC AWAIT TRY CATCH
 async function getData(id) {
   const usersName = document.getElementById("users-name");
